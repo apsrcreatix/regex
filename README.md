@@ -25,7 +25,7 @@
 | ^ (caret)           | <u>Inside square braces</u> : matches any character *except* those in the string.<br /> <u>At the beginning of the entire regular expression</u> : matches the beginning of a line. |
 | $ (dollar)          | At the end of the entire regular expression, it matches the end of a line |
 | [ ] (square braces) | Matches any one character in that string.                    |
-| \| (or)             | performs like OR operation. |
+| \| (or)             | Match one thing or the other.For example, `a|b` matches either a or b. |
 | & (ampersand)       |                                                              |
 | - (minus)           | Within square brackets indicates a range of consecutive ASCII characters. |
 | [a-z]+           | Matches one or more of any of the characters in the set.     |
@@ -38,6 +38,8 @@
 | \D                  | Matches a single non-digit character (i.e., `[^0-9]`).       |
 | \w                  | Matches single alphanumeric word character,including the underscore (i.e., `[A-Za-z0-9_]`). |
 | \W                  | Maches single non word character (i.e., `[^A-Za-z0-9_]`).    |
+| \s | Matches single whitespace character. This includes space (`` ``), tab (`\t`), form feed, line feed, and other Unicode spaces. |
+| \S | Matches single non-whitespace character (i.e., `[^\w]`). |
 ### A.3 Points To Ponder 🤯
 
 - If an expression is enclosed in parentheses (`(` and `)`), the editor treats it as one expression and applies any asterisk (`*`) or plus (`+`) to the whole expression.
@@ -46,7 +48,29 @@
 
 ## B. Working Examples 😢
 
+Regular expressions are used with the **RegExp methods**:
 
+1. *test*
+2. *exec*
 
+and with the **String methods**:
 
+1. *match*
+2. *search*
+3. *split*
+4. *replace*
+
+### Test Method
+
+- executes a search for a match between a regular expression and a specified string.
+- Returns true or false.
+
+```js
+// Test whether 'apple' is contained at the very beginning of a sentence (string)
+var regex = /^apple/;
+var sentence_a = "apple is fruit.";
+var sentence_b = "an apple a day keeps Dr. away.";
+console.log(regex.test(sentence_a)); //true
+console.log(regex.test(sentence_b)); //false
+```
 
