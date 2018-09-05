@@ -1,4 +1,4 @@
-# Regular Expressions <sup>$ Javascript $<sup>
+# Regular Expressions <sup>*Javascript*<sup>
 
 ## A. Theory 📔
 
@@ -64,7 +64,7 @@
 
 ## B. Working Examples 👷
 
-### B.1. Methods in $ Javascript $
+### B.1. Methods in *Javascript*
 
 Regular expressions are used with the **RegExp methods**:
 
