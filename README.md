@@ -1,19 +1,25 @@
-# Regular Expressions<sup>using  JS<sup>
+# Regular Expressions <sup>$ Javascript $<sup>
 
-## A. Theory 🙄
+## A. Theory 📔
 
 ### A.1. Know about RegEx 🤨
 
+------
+
 - A **Regular Expression** or **RegEx** is a *pattern*
-- Used to match character combinations in a string
+- Used to match character combinations in a string.
 - Are *not* wildcards, eg :
-  - h*****t doesn't means hot, hat etc but 'zero or more 'h' followed by t.  
+  - h*t doesn't means hot, hat etc but 'zero or more 'h' followed by t.  
 - Supported by most programming languages, e.g., Java, Perl, Groovy, Javascript etc. 
 - Each language supports regular expressions *slightly* different. 
 
 ### A.2. What Is What ? 😯
 
+------
+
 #### A.2.1 Common Symbols
+
+------
 
 | RegEx              | Meaning                                                      |
 | ------------------- | :----------------------------------------------------------- |
@@ -32,6 +38,8 @@
 | [^a-z]              | Matches except those who are present in the set |
 #### A.2.2 Meta Characters
 
+------
+
 | RegEx             | Meaning                                                      |
 | ------------------- | :----------------------------------------------------------- |
 | \d                  | Matches any single digit (i.e., `[0-9]`).                    |
@@ -40,13 +48,23 @@
 | \W                  | Maches single non word character (i.e., `[^A-Za-z0-9_]`).    |
 | \s | Matches single whitespace character. This includes space (`` ``), tab (`\t`), form feed, line feed, and other Unicode spaces. |
 | \S | Matches single non-whitespace character (i.e., `[^\w]`). |
+#### A.2.3 Flags 
+
+------
+
+
+
 ### A.3 Points To Ponder 🤯
+
+------
 
 - If an expression is enclosed in parentheses (`(` and `)`), the editor treats it as one expression and applies any asterisk (`*`) or plus (`+`) to the whole expression.
 - 
 
 
-## B. Working Examples 😢
+## B. Working Examples 👷
+
+### B.1. Methods in $ Javascript $
 
 Regular expressions are used with the **RegExp methods**:
 
@@ -60,9 +78,9 @@ and with the **String methods**:
 3. *split*
 4. *replace*
 
-### Test Method
+#### B.1.1 Test Method
 
-- executes a search for a match between a regular expression and a specified string.
+- Executes a search for a match between a regular expression and a specified string.
 - Returns true or false.
 
 ```js
@@ -74,3 +92,7 @@ console.log(regex.test(sentence_a)); //true
 console.log(regex.test(sentence_b)); //false
 ```
 
+#### B.1.2 Exec Method
+
+- Executes a search for a match in a specified string.
+- Returns a result array or null.
