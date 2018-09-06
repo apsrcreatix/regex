@@ -96,3 +96,4 @@ console.log(regex.test(sentence_b)); //false
 
 - Executes a search for a match in a specified string.
 - Returns a result array or null.
+

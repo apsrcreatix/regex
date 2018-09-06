@@ -1,0 +1,1 @@
+# Questinos from "10 Days of Javascript"
